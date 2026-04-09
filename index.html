@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos de Birria panchito</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-image: url('primer-plano-textura-madera_23-2151896466.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c2a27;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: aparecer 1.2s ease forwards;
+        }
+
+        header p {
+            opacity: 0;
+            animation: aparecer 1.5s ease forwards;
+        }
+
+        @keyframes aparecer {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background-color: #2c2a27;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ffd54f;
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            background-image: url('birria-tacos-996 (1).jpg');
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgba(0,0,0,0.6);
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ubicacion {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .ubicacion a {
+            color: #ffd54f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color:#2c2a27;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 200px;
+                font-size: 22px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .ubicacion {
+                font-size: 16px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .hero {
+                height: 180px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tacos de Birria panchito</h1>
+    <p>Tradición y sabor en cada taco</p>
+</header>
+
+<div class="hero">
+    Especialistas en birria auténtica
+</div>
+
+<nav>
+    <a href="menu.html"> : Carta</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>
+        Disfruta de auténticos tacos de birria preparados al momento, con ingredientes frescos 
+        y una receta tradicional que resalta el verdadero sabor casero.
+    </p>
+
+    <div class="ubicacion">
+        <br><br>
+        <a href="https://maps.app.goo.gl/rDaV5PVNB2Dxnprb6" target="_blank">
+            Ver ubicación en Google Maps
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Tacos de Birria panchito</p>
+</footer>
+
+</body>
+</html>
